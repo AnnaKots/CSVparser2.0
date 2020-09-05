@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "projects": {
+    "CSVparser2.0": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/CSVparser2.0",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.json",
+            "assets": ["src/assets"],
+            "styles": ["src/style.css"],
+            "aot": true
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "CSVparser2.0:build"
+          }
+        }
+      }
+      }},
+      "defaultProject": "CSVparser2.0"
+    }
